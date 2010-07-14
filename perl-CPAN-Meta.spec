@@ -23,7 +23,7 @@ BuildRequires: perl(Storable)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Version::Requirements)
 BuildRequires: perl(autodie)
-BuildRequires: perl(version)
+BuildRequires: perl(version) >= 1:0.820.0
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
