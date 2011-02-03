@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Meta
-%define upstream_version 2.102400
+%define upstream_version 2.110330
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -17,7 +17,7 @@ BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(IO::Dir)
 BuildRequires: perl(JSON)
-BuildRequires: perl(Parse::CPAN::Meta)
+BuildRequires: perl(Parse::CPAN::Meta) >= 1.420.0
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Storable)
 BuildRequires: perl(Test::More)
