@@ -17,7 +17,7 @@ BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
 BuildRequires: perl(IO::Dir)
 BuildRequires: perl(JSON)
-BuildRequires: perl(JSON:PP)
+BuildRequires: perl(JSON::PP)
 BuildRequires: perl(Parse::CPAN::Meta) >= 1.420.0
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Storable)
