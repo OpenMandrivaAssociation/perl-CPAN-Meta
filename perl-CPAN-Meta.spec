@@ -25,6 +25,7 @@ BuildRequires: perl(Version::Requirements)
 BuildRequires: perl(autodie)
 BuildRequires: perl(version) >= 1:0.820.0
 BuildRequires: perl-JSON-PP
+BuildRequires: perl(CPAN::Meta::YAML)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
