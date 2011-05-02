@@ -1,9 +1,9 @@
 %define upstream_name    CPAN-Meta
-%define upstream_version 2.110330
+%define upstream_version 2.110930
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Validate CPAN distribution metadata structures
 License:    GPL+ or Artistic
