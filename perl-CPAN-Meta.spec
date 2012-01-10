@@ -1,9 +1,9 @@
 %define upstream_name    CPAN-Meta
-%define upstream_version 2.110930
+%define upstream_version 2.113640
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    1
 
 Summary:    Validate CPAN distribution metadata structures
 License:    GPL+ or Artistic
@@ -28,7 +28,6 @@ BuildRequires: perl-JSON-PP
 BuildRequires: perl(CPAN::Meta::YAML)
 
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Software distributions released to the CPAN include a _META.json_ or, for
@@ -55,16 +54,9 @@ For information on the meaning of individual fields, consult the spec.
 %make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes LICENSE README META.json
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
