@@ -25,7 +25,7 @@ BuildRequires:	perl(Storable)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Version::Requirements)
 BuildRequires:	perl(autodie)
-BuildRequires:	perl(version) >= 1:0.820.0
+# BuildRequires:	perl(version) >= 1:0.820.0
 BuildRequires:	perl(CPAN::Meta::YAML)
 BuildRequires:	perl(CPAN::Meta::Requirements)
 
