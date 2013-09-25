@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Meta
-%define upstream_version 2.120921
+%define upstream_version 2.132140
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    Validate CPAN distribution metadata structures
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/CPAN/CPAN-Meta-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -93,4 +93,5 @@ make test
 + Revision: 553059
 - adding minimum version in buildrequires
 - import perl-CPAN-Meta
+
 
