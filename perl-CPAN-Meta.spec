@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-Meta
-%define upstream_version 2.132140
+%define upstream_version 2.132830
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -93,5 +93,6 @@ make test
 + Revision: 553059
 - adding minimum version in buildrequires
 - import perl-CPAN-Meta
+
 
 

@@ -1,4 +1,5 @@
 removed_sources:
   CPAN-Meta-2.120921.tar.gz: ebe6aead1db228dccecbaec5da8c9f18f665f217
-sources:
   CPAN-Meta-2.132140.tar.gz: 446203f61af4f4e361797159e5cefdfd22af2231
+sources:
+  CPAN-Meta-2.132830.tar.gz: 1699feeae08825854748771c442655cfc5a55a66
