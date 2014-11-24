@@ -1,15 +1,15 @@
 %define upstream_name    CPAN-Meta
-%define upstream_version 2.132830
+%define upstream_version 2.133380
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Release:    1
 
 Summary:    Validate CPAN distribution metadata structures
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/CPAN/CPAN-Meta-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -62,37 +62,3 @@ make test
 %doc Changes LICENSE README META.json
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Tue Jan 10 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.113.640-1
-+ Revision: 759479
-- version update 2.113640
-
-* Mon May 02 2011 Guillaume Rousse <guillomovitch@mandriva.org> 2.110.930-1
-+ Revision: 662018
-- update to new version 2.110930
-
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 2.110.330-2
-+ Revision: 655678
-- add br
-- fix br
-- rebuild for updated spec-helper
-
-  + Guillaume Rousse <guillomovitch@mandriva.org>
-    - new version
-
-* Tue Aug 31 2010 Jérôme Quelin <jquelin@mandriva.org> 2.102.400-1mdv2011.0
-+ Revision: 574781
-- update to 2.102400
-
-* Sun Aug 15 2010 Jérôme Quelin <jquelin@mandriva.org> 2.102.160-1mdv2011.0
-+ Revision: 569928
-- update to 2.102160
-
-* Wed Jul 14 2010 Jérôme Quelin <jquelin@mandriva.org> 2.101.670-1mdv2011.0
-+ Revision: 553059
-- adding minimum version in buildrequires
-- import perl-CPAN-Meta
-
-
-
